@@ -15,28 +15,4 @@ Built as the Operating Systems course project *Adaptive Medical Trust Device Sch
 - **Shift report:** one-click CSV export of patients, sensors, resources and events.
 - **Database:** everything is stored in a local SQLite database (`hospital.db`).
 
-## Running it
-
-Requires [Node.js](https://nodejs.org/) 22.13 or newer. There is nothing to install.
-
-```bash
-cd hospital-os-web
-npm start          # or: node server.js
-```
-
-Then open <http://localhost:3000>.
-
-The database file is created on first run with ten demo patients. To start again from fresh demo data, stop the server and delete `hospital.db`.
-
-Node may print `ExperimentalWarning: SQLite is an experimental feature`. This is expected and harmless.
-
-Opening `index.html` directly (without the server) also works, but data is then kept only in that browser.
-
-## Project structure
-
-| File | Purpose |
-| --- | --- |
-| `index.html` | Page layout: home page, sidebar and dashboard shell |
-| `app.js` | Monitoring loop, triage, sensor reliability, resource allocation and all views |
-| `styles.css` | Styling |
-| `server.js` | Web server and SQLite storage |
+https://hospital-os-web.vercel.app
